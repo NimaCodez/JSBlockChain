@@ -4,6 +4,7 @@ class Blockchain {
     constructor() {
         this.chain = [];
         this.pendingTransactions = [];
+        this.CreateNewBlock(100, '0', '0')
     }
 
     CreateNewBlock(nonce, PreviousBlockHash, Hash) {
@@ -22,6 +23,10 @@ class Blockchain {
 
     GetLastBlock() {
         return this.chain[this.chain.length - 1]
+    }
+    
+    GetLastBlockHash() {
+        return this.chain[this.chain.length - 1].hash;
     }
 
     CreateNewTransaction (amount, sender, recipient) {
@@ -46,6 +51,7 @@ class Blockchain {
         while (hash.substring(0, 5) !== '00000') {
             nonce++;
             hash = this.HashBlock(previousBlockHash, currentBlockData, nonce)
+            // console.log(hash)
         }
 
         return nonce;
