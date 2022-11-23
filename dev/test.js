@@ -1,0 +1,42 @@
+const Blockchain = require("./blockchain");
+
+const bitcoin = new Blockchain();
+
+const pbh = 'KJDSJLHFLJSDHFLJSDHFLSHDLFSDFSDFS'
+const cbd = [
+    {
+        amount: 10,
+        sender: 'SJDFJSDHFJSDHFJSDHLJKHSLDFHDSF',
+        recipient: 'JKSDHFJHSDLFHSLDFKJKLFJDSHFG'
+    },
+    {
+        amount: 350,
+        sender: 'SJDFJSDHFJSDHFJSDHLJKHSLDFHDSF',
+        recipient: 'JKSDHFJHSDLFHSLDFKJKLFJDSHFG'
+    },
+    {
+        amount: 35,
+        sender: 'SJDFJSDHFJSDHFJSDHLJKHSLDFHDSFA',
+        recipient: 'JKSDHFJHSDLFHSLDFKJKLFJDSHFG'
+    }
+]
+
+const nonce = 20932993;
+
+console.log(bitcoin.HashBlock(pbh, cbd, nonce))
+
+// bitcoin.CreateNewBlock(101010, 'HGSHDGKHGFKGEYUGWGFHSGK', 'HJHLFJHDSLFHLSDHFLSDKLFS')
+
+// bitcoin.CreateNewTransaction(100, 'NIMAJKSHFJHDFJLHSDLGHLSDHGLFJHDSLFJH', 'PANKDJFHLSJDHLDSLFHKLJHGDSKJAFGD')
+
+// bitcoin.CreateNewBlock(9892039, 'JHDLSJFHLSDHFSDJHLSDF', 'UEYUYOEWLJHLRUYJSDHFSDK')
+
+// bitcoin.CreateNewTransaction(70, 'NIMAJKSHFJHDFJLHSDLGHLSDHGLFJHDSLFJH', 'PANKDJFHLSJDHLDSLFHKLJHGDSKJAFGD')
+
+// bitcoin.CreateNewTransaction(500, 'NIMAJKSHFJHDFJLHSDLGHLSDHGLFJHDSLFJH', 'PANKDJFHLSJDHLDSLFHKLJHGDSKJAFGD')
+
+// bitcoin.CreateNewTransaction(3521, 'NIMAJKSHFJHDFJLHSDLGHLSDHGLFJHDSLFJH', 'PANKDJFHLSJDHLDSLFHKLJHGDSKJAFGD')
+
+// bitcoin.CreateNewBlock(0000000, 'JKLJDFKJSDHGHSDGFKHGUYERE', 'SDFGSFYTERFTYFGSDFHJ')
+
+// console.log(bitcoin.chain[2])

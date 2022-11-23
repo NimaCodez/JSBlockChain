@@ -1,0 +1,23 @@
+{
+  "name": "jsblockchain",
+  "version": "1.0.0",
+  "description": "*This document will be extended later and more information will be added.*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevNima-PG/JSBlockChain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevNima-PG/JSBlockChain/issues"
+  },
+  "homepage": "https://github.com/DevNima-PG/JSBlockChain#readme",
+  "dependencies": {
+    "sha256": "^0.2.0"
+  }
+}

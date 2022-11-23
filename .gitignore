@@ -1,0 +1,6 @@
+.env
+node_modules
+contants.js
+keys.js
+secret.js
+public
